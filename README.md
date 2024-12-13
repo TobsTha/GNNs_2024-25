@@ -17,7 +17,6 @@ personal . With PEP-8 Python sets a basic style guide. To apply several parts of
 
 ## Good Practices
 -  regularily pull the `main` branch into the branch you are currently working on to detect conflicts early on
--  satisfy ruff: an efficient tool for docstrings is the extension "autoDocstring - Python Docstring Generator" (from Nils Werner).
 
 ## Setup
 1)  install Git in VSCode
@@ -25,4 +24,4 @@ personal . With PEP-8 Python sets a basic style guide. To apply several parts of
     `git config --global user.name "Your Name"
     git config --global user.email "your.email@example.com"`
 3)  colone repo with link https://github.com/TobsTha/GNNs_2024-25.git
-4)  add gitignore enty so that your environment for the project is ignored from git during syncronization if you have another environment than `.venv` (for example conda).
+4)  add a gitignore enty so that your environment for the project is ignored from git during syncronization if you use an environment named differently than `.venv` (for example `.conda`).
