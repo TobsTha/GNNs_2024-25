@@ -12,11 +12,19 @@ I used the standard template for VSCode repositories proviede by github (I don't
 
 ## Code Style
 ### Enforced by [ruff](https://github.com/astral-sh/ruff)
-A consistent and common code style is important to make the code more readable and to have meaningful diffs in merge requests where content is changed and not the
-personal . With PEP-8 Python sets a basic style guide. To apply several parts of code style black, isort, flake8 are combined in a single tool called ruff.
+A consistent and common code style is important to make the code more readable and to have meaningful diffs in merge requests where content is changed and not the personal. Therefore it is very important that everyone working on the project also uses Ruff!! 
+
+With PEP-8 Python sets a basic style guide. To apply several parts of code style black, isort, flake8 are combined in a single tool called ruff.
+
+The extension 'autoDocstring' from Nils Werner can be used to efficiently create docstrings compatible with ruff. (e.g. type '"""' directly below the first line of a function and select 'Generate Docstring')
+Probably Copilot is the most efficient way to write docstrings though (I didn't test this a lot yet).
 
 ## Good Practices
--  regularily pull the `main` branch into the branch you are currently working on to detect conflicts early on
+-   regular commits with meaningful commit-messages
+-   avoid commiting directly to the `main` branch
+-   regularily merge the `main` branch into the branch you are currently working on to detect conflicts early on. At the latest this is very important to be done before merging the branch you have been woring on into the `main` branch! "First `main` into `new_feature_branch` then the other way round to update `main`!"
+-   regualarily merge into `main`
+-   do testing and documentation before merging into `main`
 
 ## Setup
 1)  install Git in VSCode
